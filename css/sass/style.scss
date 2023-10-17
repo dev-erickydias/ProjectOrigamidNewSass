@@ -1,7 +1,4 @@
 @import "reset";
-
 @import "grid";
-
-// Fontes
-$fonte-1: 'PT Mono', monospace;
-$fonte-2: 'Aref Ruqaa', serif;
+@import "variaveis-mixins";
+@import "geral"

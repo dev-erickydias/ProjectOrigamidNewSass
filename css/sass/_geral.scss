@@ -1,0 +1,34 @@
+body {
+  background: $begeClaro;
+  border: 10px solid $begeMedio;
+  color: $cinza;
+  @include tela(s){
+    border: none;
+  }
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+p{
+  @include type-1(18);
+}
+.titulo {
+  @include type-1(18);
+  text-transform: uppercase;
+  @include tela(s) {
+    margin-bottom: 40px;
+  }
+  &::after {
+    content: "";
+    display: block;
+    background: $cinza;
+    float: right;
+    width: 75%;
+    height: 2px;
+    margin-top: 13px;
+    @include tela(m) {
+      width: 60%;
+    }
+  }
+}
