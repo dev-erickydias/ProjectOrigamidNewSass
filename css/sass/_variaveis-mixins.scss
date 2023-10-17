@@ -11,6 +11,7 @@ $fonte-2: 'Aref Ruqaa', serif;
 
 $borderContein: 2px solid $cinza;
 $borderImage: 10px solid $begeMedio;
+$borderInputs: 2 solid $begeEscuro;
 @function em($pixel, $context: 16) {
   @return ($pixel / $context) + em;
 }
@@ -32,4 +33,10 @@ $borderImage: 10px solid $begeMedio;
     font-size: em(24px);
     line-height: em(30, 24);
   } 
+}
+
+@mixin boxshadow($shadow...){
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
 }

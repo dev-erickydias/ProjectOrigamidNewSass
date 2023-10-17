@@ -1,0 +1,68 @@
+.contato {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  @include tela(s){
+    margin-top: 60px;margin-bottom: 60px;
+  }
+}
+.contato form{
+  label {
+    @include type-1(18);
+    display: block;
+  }
+  input[type="text"], textarea {
+    @include type-1(18);
+    color: $cinza;
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    border: $borderInputs;
+    background: transparent;
+    margin-bottom: 1em;
+    &:hover, &:focus{
+      outline: none;
+      color: $begeMedio;
+    }
+  }
+  textarea {
+    height: 120px;
+  }
+}
+
+input.button{
+  @include type-1(18);
+  cursor: pointer;
+  color: $begeEscuro;
+  text-transform: uppercase;
+  border: $borderInputs;
+  background: transparent;
+  display: block;
+  width: 200px;
+  padding-top: 5px;
+  @include boxshadow(5px 5px 0 -2px $begeMedio, 5px 5px 0 0 $begeEscuro);
+  transition: .3s;
+  &:hover{
+    @include boxshadow(3px 3px 0 -2px $begeMedio, 5px 5px 0 0 $begeEscuro);
+  }
+}
+
+.contato-info {
+  display: inline-block;
+  color: $begeEscuro;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  @include tela(l){
+    float: right;
+    text-align: right;
+    margin-top: -3em;
+  }
+}
+.contato-mapa {
+  
+    display: block;
+    @include boxshadow(0 0 0 10px $begeMedio);
+    clear: both;
+    img{ 
+      width: 100%;
+    }
+}
