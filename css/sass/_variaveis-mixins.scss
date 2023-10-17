@@ -1,14 +1,15 @@
 // Cores
 $begeClaro: #edece4;
 $begeMedio: #cbc6b9;
-$bejeEscuro: #988c77;
+$begeEscuro: #988c77;
 $cinza: #2a2426;
-$verde: #45cf26;
+$verde: #1ab912;
 
 // Fontes 
 $fonte-1: 'PT Mono', monospace;
 $fonte-2: 'Aref Ruqaa', serif;
 
+$border: 2px solid $cinza;
 @function em($pixel, $context: 16) {
   @return ($pixel / $context) + em;
 }
