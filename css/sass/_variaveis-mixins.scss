@@ -1,0 +1,33 @@
+// Cores
+$begeClaro: #edece4;
+$begeMedio: #cbc6b9;
+$bejeEscuro: #988c77;
+$cinza: #2a2426;
+$verde: #45cf26;
+
+// Fontes 
+$fonte-1: 'PT Mono', monospace;
+$fonte-2: 'Aref Ruqaa', serif;
+
+@function em($pixel, $context: 16) {
+  @return ($pixel / $context) + em;
+}
+// Mixin
+@mixin type-1($size) {
+  font-family: $fonte-1;
+  @if $size == 18 {
+    font-size: em(18px);
+    line-height: em(30, 18);
+  }
+}
+@mixin type-2($size) {
+  font-family: $fonte-2;
+  @if $size == 18 {
+    font-size: em(18px);
+    line-height: em(30, 18);
+  }
+  @else if $size == 24 {
+    font-size: em(24px);
+    line-height: em(30, 24);
+  } 
+}
