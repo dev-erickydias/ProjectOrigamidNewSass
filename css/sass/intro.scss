@@ -8,14 +8,14 @@
   margin-bottom: 60px;
 }
 .intro-info{
-  border-right: $border;
+  border-right: $borderContein;
   width: 200px;
   min-width: 323px;
   p {
     padding: 10px 0 0 0;
   }
   p:first-child {
-    border-bottom: $border;
+    border-bottom: $borderContein;
     padding-bottom: 10px;
   } 
 }
@@ -50,6 +50,6 @@
   margin-left: 30px;
 }
 .intro-foto {
-  border: 10px solid $begeMedio;
+  border: $borderImage;
   width: 100%;
 }

@@ -9,7 +9,8 @@ $verde: #1ab912;
 $fonte-1: 'PT Mono', monospace;
 $fonte-2: 'Aref Ruqaa', serif;
 
-$border: 2px solid $cinza;
+$borderContein: 2px solid $cinza;
+$borderImage: 10px solid $begeMedio;
 @function em($pixel, $context: 16) {
   @return ($pixel / $context) + em;
 }
