@@ -1,0 +1,18 @@
+footer {
+  padding: 20px 0;
+  background: $cinza;
+  @include boxshadow (0 0 0 10px $cinza);
+  p {
+    color: $begeClaro;
+    @include tela(s){
+      text-align: center;
+    }
+    a img {
+      float: right;
+      @include tela(s) {
+        float: none;
+        margin: 20px auto;
+      }
+    }
+  }
+}
